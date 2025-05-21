@@ -5,6 +5,7 @@ import PersianForm from "@/components/PersianForm";
 
 const Index = () => {
   const formFields = [
+    // بخش اول: اطلاعات شخصی
     {
       label: "ایمیل",
       type: "email",
@@ -14,6 +15,17 @@ const Index = () => {
       label: "نام",
       type: "text",
       placeholder: "نام خود را وارد کنید",
+    },
+    // بخش دوم: اطلاعات تکمیلی
+    {
+      label: "رضایت‌نامه",
+      type: "checkbox",
+      placeholder: "با قوانین موافقم",
+    },
+    {
+      label: "شماره تماس",
+      type: "tel",
+      placeholder: "شماره تماس خود را وارد کنید",
     }
   ];
 
@@ -24,7 +36,7 @@ const Index = () => {
 
   const progressConfig = {
     show: true,
-    value: 5,
+    value: 10, // مقدار اولیه پیشرفت
   };
 
   return (
