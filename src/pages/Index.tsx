@@ -8,12 +8,12 @@ const Index = () => {
     {
       label: "ایمیل",
       type: "email",
-      placeholder: "test",
+      placeholder: "ایمیل خود را وارد کنید",
     },
     {
       label: "نام",
       type: "text",
-      placeholder: "test",
+      placeholder: "نام خود را وارد کنید",
     }
   ];
 
@@ -29,8 +29,8 @@ const Index = () => {
 
   return (
     <WatercolorBackground>
-      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="bg-white bg-opacity-80 rounded-xl shadow-xl p-6 w-full max-w-md">
+      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 animate-fade-in">
+        <div className="bg-white bg-opacity-80 rounded-xl shadow-xl p-6 w-full max-w-md backdrop-blur-sm animate-scale-in transition-all duration-500 hover:shadow-2xl">
           <PersianForm 
             fields={formFields}
             button={buttonConfig}
